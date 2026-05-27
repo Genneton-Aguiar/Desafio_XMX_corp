@@ -1,0 +1,261 @@
+.preco {
+    width: 100%;
+    background: #F7C417;
+    display: flex;
+    justify-content: center;
+}
+
+.barra_content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 126px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+.security, .medal, .car, .flower {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex: 1; /* Faz todos os 4 espaços terem tamanhos exatamente iguais */
+    height: 45px; /* Altura da linha divisória */
+}
+
+
+/* Coloca a linha na direita de todos os blocos*/
+.security, .medal, .car {
+    border-right: 1px solid rgba(14, 13, 17, 0.2); /* Linha fina */
+}
+
+.preco_content a {
+    color: #0E0D11;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none; /* Remoção do sublinhado*/
+}
+
+
+.pricing_section {
+    width: 100%;
+    background-color: #f5f5f5; /* Fundo cinza claro/branco do layout */
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing_container {
+    width: 100%;
+    max-width: 1200px; /* Alinhado com a largura padrão do site */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Títulos */
+.pricing_header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pricing_header h2 {
+    font-size: 36px;
+    color: #0E0D11;
+    font-weight: 700;
+}
+
+.pricing_header h2 span {
+    color: #F7C417; /* Destaque amarelo no nome do produto */
+}
+
+.pricing_header p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Grid/Alinhamento dos Cards */
+.cards_wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha os cards pelo topo */
+    gap: 25px;
+}
+
+/* CARD BASE */
+.price_card {
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 16px;
+    flex: 1; /* Distribui os 3 cards com larguras iguais */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Diferencial do Card Destaque (Best Seller) */
+.price_card.featured_card {
+    border: 2px solid #F7C417; /* Borda amarela */
+    background: #FFFCEB;       /* Fundo levemente amarelado do design */
+    transform: scale(1.03);    /* Dá um leve destaque de tamanho */
+}
+
+/* Badges do topo do card */
+.card_badge_top {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.dark_badge { background-color: #000000; }
+.orange_badge { background: var(--gradient, linear-gradient(90deg, #FF4747 0%, #F6E323 100%)); } /* Laranja do Best Seller */
+
+/* Conteúdo interno do card */
+.card_content {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card_content h3 {
+    font-size: 28px;
+    color: #000;
+    font-weight: 700;
+}
+
+.supply_text {
+    font-size: 16px;
+    color: var(--gray-dark, #606060);
+    margin-bottom: 20px;
+}
+
+.product_pack_img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    
+}
+
+/* Bloco de Preço */
+.price_box {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+}
+
+.currency {
+    font-size: 48px;
+    font-weight: 800;
+    color: #000;
+}
+
+.per_bottle {
+    font-size: 16px;
+    color: #666;
+    margin-left: 4px;
+}
+
+/* Lista de benefícios dos cards */
+.card_benefits {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 25px;
+    min-height: 80px; /* Garante que os cards tenham a mesma altura mesmo com menos linhas */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card_benefits li {
+    font-size: 14px;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.check_icon {
+    color: #00CC66; /* Verde do check */
+    font-weight: 700;
+}
+
+
+.btn_buy {
+    width: 100%;
+    background: linear-gradient(180deg, #FFFE4A 0%, #FFD901 100%);
+    color: #000;
+    border: none;
+    border-bottom: 5px solid #A38B00;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.btn_buy:hover {
+    filter: brightness(1.05);
+}
+
+.payment_img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+
+.total_price {
+    font-size: 14px;
+    color: #444;
+    font-weight: 500;
+}
+
+.old_price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.new_price {
+    color: #0066CC;
+    font-weight: 700;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .cards_wrapper {
+        flex-direction: column; /* Empilha os cards no celular e tablet */
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .price_card {
+        width: 100%;
+        max-width: 400px; /* Não deixa o card espalhar demais no mobile */
+    }
+    
+    .price_card.featured_card {
+        transform: none; /* Remove o zoom para não quebrar o layout mobile */
+    }
+}

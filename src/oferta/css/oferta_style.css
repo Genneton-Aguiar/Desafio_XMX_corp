@@ -1,0 +1,257 @@
+.offer_section {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.offer_container {
+    background-color: #0E0D11;
+    width: 100%;
+    padding: 25px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.offer_text {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.offer_highlight {
+    color: #FFD901;
+}
+
+
+
+.cards_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1040px;
+    margin: 40px auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.price_card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #E5E5E5;
+    border-radius: 16px;
+}
+
+
+.price_card.featured_card {
+    border: 2px solid #FFD901;
+    background-color: #FFFDF3;
+}
+
+
+
+.reviews_guarantee_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto 80px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+.reviews_header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.reviews_header h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+    color: #0E0D11;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+}
+
+.stars_rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.stars_rating img {
+    width: 20px;
+    height: auto;
+}
+
+.rating_score {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    margin-left: 8px;
+}
+
+.reviews_count {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #666666;
+    margin: 0;
+}
+
+.reviews_count span {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+
+.trust_badges_row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.trust_badge_item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.trust_badge_item:not(:last-child) {
+    border-right: 1px solid #EAEAEA;
+}
+
+.trust_badge_item img {
+    height: 24px;
+    width: auto;
+    object-fit: contain;
+}
+
+.trust_badge_item span {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #555555;
+    font-weight: 500;
+}
+
+.main_guarantee_card {
+    width: 100%;
+    background: linear-gradient(90deg, #0C0A0B 0%, #180907 40%, #7C180E 100%);
+    border-radius: 24px;
+    padding: 45px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+.guarantee_seal_box {
+    flex-shrink: 0;
+}
+
+.guarantee_seal_img {
+    width: 180px;
+    height: auto;
+}
+
+.guarantee_text_box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.guarantee_text_box h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    line-height: 36px;
+}
+
+.guarantee_text_box h4 .highlight_orange {
+    color: #F3A022;
+}
+
+.guarantee_text_box p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #D5D5D5;
+    line-height: 24px;
+    margin: 0 0 25px 0;
+}
+
+#btn_order_now2 {
+    background: linear-gradient(180deg, #FFFE4A 0%, #FFD901 100%);
+    color: #0E0D11;
+    border: none;
+    border-bottom: 4px solid #A38B00;
+    padding: 14px 50px;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+    .cards_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_guarantee_card {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+        gap: 30px;
+    }
+
+    .guarantee_text_box {
+        align-items: center;
+        text-align: center;
+    }
+
+    .trust_badges_row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .trust_badge_item {
+        border-right: none;
+    }
+}

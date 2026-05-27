@@ -1,0 +1,80 @@
+.fret_section {
+    width: 100%;
+    background-color: #F7C417;
+    padding: 30px 20px 40px 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fret_container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Distância entre o ícone e o texto */
+    gap: 48px; 
+}
+
+.fret_icon {
+    font-size: 30px; /* Tamanho proporcional ao layout */
+    color: #0E0D11; 
+    display: flex;
+    align-items: center;
+}
+
+.fret_content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.fret_title {
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+    color: #0E0D11;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.fret_highlight {
+    color: #4A5568; 
+    font-weight: 700;
+}
+
+.fret_title strong {
+    font-weight: 700;
+}
+
+.fret_subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #0E0D11;
+    font-weight: 500;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .fret_container {
+        flex-direction: column;
+        gap: 15px; 
+        text-align: center;
+    }
+
+    .fret_content {
+        text-align: center;
+    }
+
+    .fret_title {
+        font-size: 20px;
+    }
+
+    .fret_subtitle {
+        font-size: 13px;
+    }
+}

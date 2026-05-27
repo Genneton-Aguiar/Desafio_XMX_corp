@@ -1,0 +1,146 @@
+
+.formula_section {
+    width: 100%;
+    min-height: 600px;
+    background: #050302;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Container que limita o conteúdo no centro da página */
+.formula_container {
+    width: 100%;
+    max-width: 1200px; /* Mesma largura máxima usada no Hero e nos Preços */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+/* ==========================================================================
+   LADO ESQUERDO - MÍDIA
+   ========================================================================== */
+.formula_media {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+}
+
+#product_fire_img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 520px; /* Limita o tamanho do pote para não quebrar a seção */
+    object-position: center;
+    aspect-ratio: 487/307;
+}
+
+/* Posicionamento do selo dourado em cima do pote */
+#gold_badge {
+    position: absolute;
+    top: 60px;
+    right: 20%; /* Ajusta a posição lateral baseado na imagem */
+    width: 90px;
+    height: auto;
+    z-index: 3;
+}
+
+
+.formula_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.formula_offer_badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.inline_flame {
+    width: 14px;
+    height: auto;
+}
+
+.formula_content h2 {
+    color: #FFFFFF;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 24px;
+}
+
+.orange_highlight {
+    background: linear-gradient(90deg, #FF4747 0%, #F6E323 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.formula_description {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    max-width: 520px; 
+}
+
+
+#btn_order_now {
+   color: var(--natural-black, #0E0D11);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    padding: 18px 104px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 50px;
+    border-bottom: 6px solid #8E7C02;
+    background: linear-gradient(180deg,
+            #FFFE4A 0%,
+            #FFD901 100%);
+}
+
+.btn_order_now:hover {
+    transform: scale(1.02);
+    filter: brightness(1.05);
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE (MOBILE)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .formula_container {
+        flex-direction: column; /* Joga o texto para baixo da imagem no celular */
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .formula_content {
+        align-items: center; /* Centraliza o texto e botão no mobile */
+    }
+    
+    .formula_offer_badge {
+        justify-content: center;
+    }
+}

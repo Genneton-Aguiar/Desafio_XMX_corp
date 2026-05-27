@@ -1,0 +1,154 @@
+.benefit_section {
+    width: 100%;
+    min-height: 580px;
+    background-color: #0A0A0A;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.benefit_container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    z-index: 10;
+}
+
+
+.benefit_media {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
+}
+
+#benefit_product_img {
+    max-width: 200%;
+    height: auto;
+    max-height: 580px;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
+}
+
+
+#tunther_yellow {
+    position: absolute;
+    width: 200%;
+    height: auto;
+    max-height: 700px;
+    z-index: 1;
+    object-fit: contain;
+}
+
+
+.benefit_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.benefit_content h2 {
+    color: #FFFFFF;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 25px;
+}
+
+
+
+.orange_higligtht {
+    background: linear-gradient(90deg, #FF4747 0%, #F6E323 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.benefits_list li {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+
+#btn_order_now_2 {
+    background: linear-gradient(180deg, #FFFE4A 0%, #FFD901 100%);
+    color: #0E0D11;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    border: none;
+    border-bottom: 5px solid #8E7C02;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+#btn_order_now_2 img {
+    width: 22px;
+    height: auto;
+}
+
+#btn_order_now_2:hover {
+    transform: scale(1.02);
+    filter: brightness(1.05);
+}
+
+
+#couple_img {
+    position: absolute;
+    left: 700px;
+    width: 1015px;
+    opacity: 0.02;
+    mix-blend-mode: overlay;
+    Z-index: 1;
+}
+
+
+@media (max-width: 850px) {
+    .benefit_container {
+        flex-direction: column;
+        /* Empilha no celular */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .benefit_content {
+        align-items: center;
+        /* Centraliza textos e botão no mobile */
+    }
+
+    .benefits_list li {
+        text-align: left;
+    }
+
+    #couple_img {
+        max-width: 100%;
+        opacity: 0.1;
+        /* Diminui a foto no celular para dar mais leitura */
+    }
+}
