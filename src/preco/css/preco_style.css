@@ -16,32 +16,41 @@
 }
 
 
-.security, .medal, .car, .flower {
+.security,
+.medal,
+.car,
+.flower {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
-    flex: 1; /* Faz todos os 4 espaços terem tamanhos exatamente iguais */
-    height: 45px; /* Altura da linha divisória */
+    flex: 1;
+    /* Faz todos os 4 espaços serem iguais */
+    height: 45px;
+
 }
 
 
-/* Coloca a linha na direita de todos os blocos*/
-.security, .medal, .car {
-    border-right: 1px solid rgba(14, 13, 17, 0.2); /* Linha fina */
+/* Coloca a linha na direita entre os blocos*/
+.security,
+.medal,
+.car {
+    border-right: 1px solid rgba(14, 13, 17, 0.2);
+    /* Linha fina */
 }
 
 .preco_content a {
     color: #0E0D11;
     font-size: 16px;
     font-weight: 600;
-    text-decoration: none; /* Remoção do sublinhado*/
+    text-decoration: none;
+    /* Remoção do sublinhado*/
 }
 
 
 .pricing_section {
     width: 100%;
-    background-color: #f5f5f5; /* Fundo cinza claro/branco do layout */
+    background-color: #f5f5f5;
     padding: 80px 20px;
     display: flex;
     justify-content: center;
@@ -49,7 +58,7 @@
 
 .pricing_container {
     width: 100%;
-    max-width: 1200px; /* Alinhado com a largura padrão do site */
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,7 +77,8 @@
 }
 
 .pricing_header h2 span {
-    color: #F7C417; /* Destaque amarelo no nome do produto */
+    color: #F7C417;
+
 }
 
 .pricing_header p {
@@ -77,32 +87,34 @@
     margin-top: 10px;
 }
 
-/* Grid/Alinhamento dos Cards */
+
 .cards_wrapper {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: flex-start; /* Alinha os cards pelo topo */
+    align-items: flex-start;
     gap: 25px;
 }
 
-/* CARD BASE */
+
 .price_card {
     background: #ffffff;
     border: 2px solid #e0e0e0;
     border-radius: 16px;
-    flex: 1; /* Distribui os 3 cards com larguras iguais */
+    flex: 1;
+    /*3 cards com larguras iguais */
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
 }
 
-/* Diferencial do Card Destaque (Best Seller) */
+
 .price_card.featured_card {
-    border: 2px solid #F7C417; /* Borda amarela */
-    background: #FFFCEB;       /* Fundo levemente amarelado do design */
-    transform: scale(1.03);    /* Dá um leve destaque de tamanho */
+    border: 2px solid #F7C417;
+    background: #FFFCEB;
+    transform: scale(1.03);
+    /*  destaque de tamanho */
 }
 
 /* Badges do topo do card */
@@ -118,8 +130,15 @@
     color: #ffffff;
 }
 
-.dark_badge { background-color: #000000; }
-.orange_badge { background: var(--gradient, linear-gradient(90deg, #FF4747 0%, #F6E323 100%)); } /* Laranja do Best Seller */
+.dark_badge {
+    background-color: #000000;
+}
+
+.orange_badge {
+    background: var(--gradient, linear-gradient(90deg,
+                #FF4747 0%,
+                #F6E323 100%));
+}
 
 /* Conteúdo interno do card */
 .card_content {
@@ -147,7 +166,7 @@
     height: 180px;
     object-fit: contain;
     margin-bottom: 20px;
-    
+
 }
 
 /* Bloco de Preço */
@@ -174,7 +193,8 @@
     list-style: none;
     width: 100%;
     margin-bottom: 25px;
-    min-height: 80px; /* Garante que os cards tenham a mesma altura mesmo com menos linhas */
+    min-height: 80px;
+    /* Garante que os cards tenham a mesma altura mesmo com menos linhas */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,7 +212,8 @@
 }
 
 .check_icon {
-    color: #00CC66; /* Verde do check */
+    color: #00CC66;
+    /* Verde do check */
     font-weight: 700;
 }
 
@@ -245,17 +266,20 @@
 /* Responsividade */
 @media (max-width: 992px) {
     .cards_wrapper {
-        flex-direction: column; /* Empilha os cards no celular e tablet */
+        flex-direction: column;
+        /* Empilha os cards no celular e tablet */
         align-items: center;
         gap: 40px;
     }
-    
+
     .price_card {
         width: 100%;
-        max-width: 400px; /* Não deixa o card espalhar demais no mobile */
+        max-width: 400px;
+        /* Não deixa o card espalhar demais no mobile */
     }
-    
+
     .price_card.featured_card {
-        transform: none; /* Remove o zoom para não quebrar o layout mobile */
+        transform: none;
+        /* Remove o zoom para não quebrar o layout mobile */
     }
 }

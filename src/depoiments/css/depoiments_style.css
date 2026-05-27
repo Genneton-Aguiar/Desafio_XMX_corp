@@ -33,7 +33,7 @@
     color: #F7C417;
 }
 
-/* Grid de Depoimentos (4 colunas perfeitamente distribuídas) */
+/* Grid de Depoimentos */
 .depoiments_grid {
     display: flex;
     width: 100%;
@@ -42,7 +42,7 @@
     margin-bottom: 50px;
 }
 
-/* O Card Branco */
+
 .depoiment_card {
     background: #ffffff;
     border-radius: 20px;

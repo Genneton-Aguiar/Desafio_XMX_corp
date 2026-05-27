@@ -43,7 +43,6 @@
     margin-top: 12px;
 }
 
-/* Grid com CSS Grid (perfeito para 2 linhas e 3 colunas) */
 .ingredients_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
@@ -70,15 +69,14 @@
     width: 110px;
     height: 110px;
     background-color: #ffffff;
-    border: 3px solid #F7C417; /* Borda amarela chamativa */
+    border: 3px solid #F7C417;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     
-    /* Pulo do gato para flutuar para fora do card */
     position: relative;
-    margin-top: -85px; /* Puxa o círculo para cima, saindo do card preto */
+    margin-top: -85px; 
     margin-bottom: 20px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -90,7 +88,6 @@
     object-fit: contain;
 }
 
-/* Textos do Card */
 .ingredient_card h3 {
     color: #ffffff;
     font-size: 20px;
@@ -129,13 +126,13 @@
 
 @media (max-width: 992px) {
     .ingredients_grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
+        grid-template-columns: repeat(2, 1fr); /
     }
 }
 
 @media (max-width: 600px) {
     .ingredients_grid {
-        grid-template-columns: 1fr; /* 1 coluna no celular */
+        grid-template-columns: 1fr; 
         gap: 80px 0;
     }
 }

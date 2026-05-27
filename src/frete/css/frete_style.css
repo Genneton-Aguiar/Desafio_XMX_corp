@@ -13,8 +13,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    /* Distância entre o ícone e o texto */
     gap: 48px; 
 }
 
